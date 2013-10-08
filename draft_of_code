@@ -1,0 +1,52 @@
+/* CSCI 261 Exam 1 Review Question 9
+ *
+ * Author: Alex Patel
+ *
+ * More complete description here...
+ */
+
+#include <iostream>   // "Computer, include the iostream library so I can use cin and cout."
+#include <iomanip>    // "Computer, include the iomanip library so I can make my output pretty."
+#include <cstdlib>    // "Computer, include the standard library so my program isn't boring."
+#include <string>     // "Computer, include the string library so I can use more than one letter."
+#include <cmath>      // "Computer, include the math library because I like math."
+using namespace std;  // We will almost always use the standard namespace.
+
+// Define any constants you plan to use here.
+const string NAME = "Alex";
+
+// Function Prototypes
+int randomBetween( int lowerBound, int upperBound );
+
+// Every program must have a function named "main", which is the starting point of the program.
+int main( )
+{
+  cout << NAME << "'s homework . . ." << endl << endl;
+
+  /******** INSERT YOUR CODE BELOW HERE ********/
+  int lowerbound, upperbound;
+
+  cout << "Enter the value for the lower bound: " ;
+  cin >> lowerbound;
+
+  cout << "Enter the value for the upper bound ( lower < upper ) : " ;
+  cin >> upperbound;
+
+  cout << "The random value between " << lowerbound << " and "<< upperbound 
+       << " is " << randomBetween << endl;
+
+
+
+  /******** INSERT YOUR CODE ABOVE HERE ********/
+
+  // This signals the operating system that everything is ok.
+  return EXIT_SUCCESS;
+}
+
+int randomBetween( int lowerBound, int upperBound )
+{
+  int upperbound, lowerbound;
+  int randomBetween = rand() % (upperbound-lowerbound) + upperbound;
+  return randomBetween;
+}
+
